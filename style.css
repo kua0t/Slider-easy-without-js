@@ -1,0 +1,35 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    
+}
+@keyframes sliderMovement{
+    20% {
+        transform: translateX(0%);
+    }
+    40% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+    
+
+}
+.image-1,
+.image-2,
+.image-3,
+.image-4{
+    width: 100%;
+    animation: sliderMovement 25s infinite ease;
+}
